@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/btn_round_border"
+        android:backgroundTint="@color/white"
+        android:paddingStart="8dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friendProfileImageView"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person_24"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp
+"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/friendNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Student Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/friendOnlineOfflineStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Student Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

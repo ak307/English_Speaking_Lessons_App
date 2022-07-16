@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/listenNav"
+        android:icon="@drawable/ic_listen_24"
+        android:title="Listen" />
+    <item
+        android:id="@+id/practiceNav"
+        android:icon="@drawable/ic_practice_24"
+        android:title="Practice" />
+    <item
+        android:id="@+id/saveNav"
+        android:icon="@drawable/ic_save_24"
+        android:title="Save" />
+
+
+</menu>

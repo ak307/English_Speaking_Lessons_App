@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akGroup.englishspeakinglessons">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnglishSpeakingLessons">
+        <activity
+            android:name=".api.activity.VideoCallOutGoingActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.VideoCallIncomingActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ChatWithFriendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.FindFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.LearningResourcesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ConversationLevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.YourPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.AddNewLessonPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.SavedPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ConversationListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.LoginWithPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.TermsOfServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.Fill_OTP_Signup_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.Fill_OTP_login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.SignupWithPhone"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.SignupPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.LogInPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.PlayVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.activity.ImgCropperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".api.activity.LoadingPageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9031708340876900~3417940643" />
+
+
+
+        <service
+            android:name=".service.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

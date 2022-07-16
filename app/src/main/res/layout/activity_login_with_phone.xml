@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".api.activity.LoginWithPhoneActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/signupPhonePageImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_foreground"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupPageImageView" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/phone_linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/logInWithPhoneCountryCodePicker"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+            app:ccp_textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/loginWithPhonesEnterPhoneNoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:background="@drawable/textview_border"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColorHint="@color/darker_grey"
+            android:hint="Phone Number"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/loginWithPhonePageErrorMassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="error"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:fontFamily="serif"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4sp"/>
+
+    <Button
+        android:id="@+id/loginWithPhoneGetOTPBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_round_border"
+        android:text="GET OTP"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

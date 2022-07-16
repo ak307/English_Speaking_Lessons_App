@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Speak and Meet</string>
+    <string name="home">HOME</string>
+    <string name="social">SOCIAL</string>
+    <string name="setting">SETTING</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

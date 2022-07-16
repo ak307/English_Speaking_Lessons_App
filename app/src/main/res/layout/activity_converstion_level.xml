@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".api.activity.ConversationLevelActivity">
+
+
+  <TextView
+      android:id="@+id/textView15"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/primary_btn_background"
+      android:fontFamily="serif"
+      android:gravity="center"
+      android:padding="15dp"
+      android:text="Conversation level"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="16dp"
+      android:layout_weight="2"
+      android:background="@color/white"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="5dp"
+      app:cardUseCompatPadding="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+
+      <Button
+          android:id="@+id/beginnerLevelBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/flag_transparent"
+          android:fontFamily="serif"
+          android:padding="15dp"
+          android:text="beginner"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView15"
+          tools:layout_editor_absoluteX="24dp" />
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:background="@color/white"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="5dp"
+      app:cardUseCompatPadding="true"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+
+      <Button
+          android:id="@+id/intermediateLevelBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/flag_transparent"
+          android:fontFamily="serif"
+          android:padding="15dp"
+          android:text="Intermediate"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:background="@color/white"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="5dp"
+      app:cardUseCompatPadding="true"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+
+      <Button
+          android:id="@+id/advancedLevelBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/flag_transparent"
+          android:fontFamily="serif"
+          android:padding="15dp"
+          android:text="Advanced level"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/levelFragmentAdView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:layout_marginBottom="8dp"
+      app:adSize="BANNER"
+      app:adUnitId="ca-app-pub-9031708340876900/2631472586"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
